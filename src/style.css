@@ -1,0 +1,26 @@
+body{
+    background: lightgrey;
+}
+*{
+    font-family: "microsoft Yahei";
+}
+.sparrow-card-group{
+    background: white;
+    padding-top: 8px;
+}
+.sparrow-card-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.sparrow-card {
+    width: 45%;
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.sparrow-card img{
+    margin-left: 7.5%;
+    width: 85%;
+}
