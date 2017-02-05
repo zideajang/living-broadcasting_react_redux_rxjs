@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Card from './Card';
 class Panel extends React.Component {
   constructor() {
     super();
@@ -15,32 +15,18 @@ class Panel extends React.Component {
         </div>
         <div class="sparrow-card-body">
           <div class="sparrow-card-row">
-            <div class="sparrow-card">
-              <img src="/src/images/javascript.jpg" alt="111" />
-              <span>111</span>
-            </div>
-            <div class="sparrow-card">
-              <img src="/src/images/javascript.jpg" alt="111" />
-              <span>222</span>
-            </div>
-            <div class="sparrow-card">
-              <img src="/src/images/javascript.jpg" alt="111" />
-              <span>333</span>
-            </div>
+            <Card title="111111" imgurl="javascript.jpg"/>
+            <Card title="222222" imgurl="javascript.jpg"/>
+            <Card title="333333" imgurl="javascript.jpg"/>
+            
+            
           </div>
           <div class="sparrow-card-row">
-            <div class="sparrow-card">
-              <img src="/src/images/javascript.jpg" alt="111" />
-              <span>111</span>
-            </div>
-            <div class="sparrow-card">
-              <img src="/src/images/javascript.jpg" alt="111" />
-              <span>222</span>
-            </div>
-            <div class="sparrow-card">
-              <img src="/src/images/javascript.jpg" alt="111" />
-              <span>333</span>
-            </div>
+            <Card title="44444" imgurl="javascript.jpg"/>
+            <Card title="55555" imgurl="javascript.jpg"/>
+            <Card title="66666" imgurl="javascript.jpg"/>
+            
+            
           </div>
         </div>
 

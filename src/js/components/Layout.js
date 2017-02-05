@@ -10,8 +10,9 @@ export default class Layout extends Component{
         return(
             <div>
                 <Header/>
-                <h3>Welcome</h3>
-                <Panel/>
+                <div>
+                    {this.props.children}
+                </div>
             </div>
         )
     }
