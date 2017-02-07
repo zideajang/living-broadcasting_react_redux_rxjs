@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import {Link} from 'react-router';
+import Style from 'style-it';
 
 export default class SubNav extends Component{
     constructor(){
@@ -35,6 +36,11 @@ export default class SubNav extends Component{
         }
     }
     render(){
+
+        const liStyle = {
+            
+        }
+
         const links = this.state.links.map((item,key)=>{
             return (<li key={key} class="nav-item"><Link class="nav-link" to={item.to}>{item.name}</Link></li>)
         });
@@ -42,12 +48,20 @@ export default class SubNav extends Component{
             background:'white',
             fontSize:'12px'
         }
-        return(
+        return Style.it(`
+            .nav-item:hover {
+                border-bottom:2px solid orangered;
+            }
+            .nav-link:hover{
+                color:orangered;
+            }
+            `,
             <div style={subNavStyle}>
                 <ul class="nav justify-content-center">
                     {links}
                 </ul>
             </div>
-        )
+        );
+        
     }
 }

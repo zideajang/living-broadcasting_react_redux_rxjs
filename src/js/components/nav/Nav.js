@@ -6,10 +6,12 @@ export default class Nav extends Component{
         return (
             <div>
                 <nav class="navbar navbar-light bg-faded">
-                    <a class="navbar-brand" href="#">
-                        <img src="/src/images/javascript.jpg" width="30" height="30" class="d-inline-block align-top" alt=""/>
-                    zidea
-                    </a>
+                <form class="form-inline">
+                    <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search"></span></span>
+                    <input type="text" class="form-control" placeholder="搜索" aria-describedby="basic-addon1"/>
+                    </div>
+                </form>
                 </nav>                     
                 
             </div>

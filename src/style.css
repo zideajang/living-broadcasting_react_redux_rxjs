@@ -24,3 +24,32 @@ body{
     margin-left: 7.5%;
     width: 85%;
 }
+.sparrow-footer{
+    position: fixed;
+    bottom:0;
+    background: white;
+    height: 48px;
+    width: 100%;
+}
+.sparrow-footer ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    height: 100%;
+}
+.sparrow-footer_item{
+    background: lightpink;
+    flex-grow: 2;
+    
+    text-align: center; 
+}
+.sparrow-footer_item .center{
+    line-height: 48px;
+    background: deepskyblue;
+    flex-grow: 1;
+}
+
+.center{
+    width: 64px;
+    
+}
